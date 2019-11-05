@@ -1,0 +1,25 @@
+.header {    
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-evenly;          
+}
+
+.sidebar {
+    flex: 2 1
+}
+
+.search {
+    flex: 7 5
+}
+
+.search::after {
+    content: '';
+    background-image: url("./searchIcon.svg"); 
+}
+
+.user {
+    flex: 3 1
+}
