@@ -1,0 +1,17 @@
+/* HEADER */
+.hero {    
+	height: 300px;  
+	width: 75%;
+	max-width: 1200px; 
+	margin: 0 auto;   
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.section-title,
+.section-subtitle,
+.section-description {
+	width: 50%;
+}

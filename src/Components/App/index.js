@@ -3,14 +3,21 @@ import React from 'react';
 
 //Components
 import Header from '../Header';
+import Hero from '../Hero';
 
 
 function App() {
   return (
-    <div>
+    <>
 			<Header />
-      <h1>Hola Mundo</h1>
-    </div>
+      <Hero />
+			<Hero />
+			<Hero />
+			<Hero />
+			<Hero />
+			<Hero />
+			<Hero />
+    </>
   );
 }
 
