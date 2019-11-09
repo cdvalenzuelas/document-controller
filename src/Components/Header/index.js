@@ -2,7 +2,6 @@
 import React from 'react'
 
 //Styles
-import './layout.css'
 import './styles.css'
 
 // Images
@@ -24,7 +23,7 @@ function Header() {
 			</form>
 			<div className="user">
 				<h3>Danilo</h3>
-				<img src={userIcon} alt="search" />
+				<img className="avatar" src={userIcon} alt="search" />
 			</div>		
 		</header>
 	);
