@@ -1,0 +1,53 @@
+/* SEARCH */
+.search {
+	/* BOX-MODEL */
+	width: 50%;
+	height: 75%;
+
+    /* LAYOUT */   
+	flex: 1 1 1;
+	display: flex;	
+	align-items: center;
+    justify-content: space-between;
+    
+   
+
+    /* STYLES */
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.search input[type="text"] {
+	/* LAYOUT */ 
+	height: 100%;
+	width: 75%;
+	flex: 1 1;
+	margin-left: 15px;
+
+	/* STYLES */
+	border: none;
+	outline: none; 
+	border-top-left-radius: 0;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;      
+}
+
+.search__glass {
+	/* BOX-MODEL */
+	max-width: 50px;	
+	height: 100%;
+
+	/* LAYOUT */ 
+	flex: 0 0 1;
+	
+	/* STYLE */
+	background-color: var(--color3);
+	border-radius: 0 15px 15px 0;
+	border: none;
+}
+
+.search__glass img {
+	height: 75%;
+	width: 75%;
+}

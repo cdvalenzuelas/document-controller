@@ -16,10 +16,12 @@
     --z-three: 2;
     --z-two: 1;
     --z-normal: 0;
-    --z-back: -1;
+    --z-back: -1;  
+    font-family: 'Lato', sans-serif;   
 }
 
 *, *::after, *::before {
+    /* outline: 1px solid salmon;*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;        
@@ -32,6 +34,5 @@ body::before {
     z-index: var(--z-two);
     content:'';
     display: block;
-    height: 80px;   
-    background-image: linear-gradient(to bottom, white, 80%, transparent);
+    height: 80px;     
 }
