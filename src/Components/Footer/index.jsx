@@ -11,7 +11,7 @@ import instagram from "./instagram.svg";
 
 const Footer = () => (
   <footer className="footer">
-    <form>
+    <form className="footer__form">
       <h3>Contáctame</h3>
       <input type="textarea" placeholder="Déjame un mensaje" />
       <input type="tel" placeholder="Teléfono" />
@@ -21,6 +21,7 @@ const Footer = () => (
 
     <div className="footer__social">
       <h3>redes sociales</h3>
+      <br />
       <a className="social-link" href="https://www.facebook.com/danilo.valenzuela.7" target="blank">
         <img src={facebook} alt="Facebook" />
       </a>

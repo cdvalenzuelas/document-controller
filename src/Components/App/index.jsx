@@ -1,57 +1,32 @@
 // Dependencies
 import React, { Component } from "react";
 
-//Components
-import Header from "../Header";
-import Hero from "../Hero";
-import Footer from "../Footer";
-import Project from "../Project"
-
-async function fetchImages(url) {  
-  let response = []
-  try {
-    let data = await fetch(url) 
-    response = await data.json()
-  } catch (error) {
-    console.error(error)
-  }  
-  console.log('response => ', response)
-  return response
-}
+// Pages
+import UserProfile from '../../pages/Userprofile'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      data: [{author:'yo', download_url:"asdfsdf"}]
+      data: []
     }
   }
 
   componentDidMount(){
     const url="https://picsum.photos/v2/list?page=1&limit=10";
-    let data = []
-    async function ejecutar(){
-      data = await fetchImages(url) 
-      return data;     
-    } 
-    
-    this.setState({data})
-         
+    let data = fetch(url)
+    data
+      .then(datos => datos.json())
+      .then(response => this.setState({data: response}))
+      .catch(error => console.log(error))        
   }
 
   
-  render() {
+  render() {    
     const { data } = this.state
-    console.log('this.state =>', data)
-    return (
-      <>
-        <Header />
-        <Hero />    
-        <Hero />  
-        {data.map(item => <Project key={item.id} src={item.download_url} author={item.author} />)}
-        <Footer />
-      </>
-    )
+    return <UserProfile 
+      data = {data}
+    />
   }
 }
 

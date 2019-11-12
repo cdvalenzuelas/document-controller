@@ -17,7 +17,10 @@
     --z-two: 1;
     --z-normal: 0;
     --z-back: -1;  
+    /* FONTS */
     font-family: 'Lato', sans-serif;   
+    /* SHADOWS */
+    --main-shadow: 0 10px 2px -5px #999;
 }
 
 *, *::after, *::before {

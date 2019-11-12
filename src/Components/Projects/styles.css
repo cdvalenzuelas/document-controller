@@ -1,0 +1,11 @@
+.projects {
+    /* BOX MODEL */
+    width: 75%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    /* LAYOUT */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}

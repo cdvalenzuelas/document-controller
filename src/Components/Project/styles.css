@@ -1,0 +1,20 @@
+.project {
+    /* BOX-MODEL */
+    width: 500px;
+    margin: 0 20px 20px 0;
+    /* LAYOUT */
+    /* STYLES */
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: var(--main-shadow);
+}
+
+.project__image {
+    /* BOX-MODEL */
+    width: 100%;
+    height: auto;
+    /* LAYOUT */
+
+    /* STYLES */
+    border-radius: inherit;
+}

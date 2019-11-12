@@ -1,9 +1,12 @@
 // Dependencies
 import React from "react";
 
+// Styles
+import './styles.css'
+
 const Project = ({ src, author }) => (
-  <article>
-    <img src={src} alt="imgeApi" />
+  <article className="project">
+    <img className="project__image" src={src} alt="imgeApi" />
     <h3>{author}</h3>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cum iusto
@@ -14,6 +17,9 @@ const Project = ({ src, author }) => (
       architecto delectus deleniti enim dicta id unde in vero perspiciatis hic,
       soluta voluptate?
     </p>
+    <button>
+      <a href="#">Ver Projecto</a>
+    </button>    
   </article>
 );
 

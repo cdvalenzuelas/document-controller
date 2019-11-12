@@ -14,7 +14,7 @@ import userIcon from "./userIcon.svg";
 const Header = () => ( 
   <>
     <header className="header">
-      <button className="sidebar">
+      <button type="button" className="sidebar">
         <img src={menuIcon} alt="menu" />
       </button>
       <SearchBar />
