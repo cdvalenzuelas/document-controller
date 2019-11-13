@@ -1,0 +1,16 @@
+.button--main {
+   margin-right: 10px;
+   background-color: var(--color3);
+   border-radius: 5px;
+   height: 30px;
+   width: 120px;    
+   border: none;
+   color: white;
+   font-weight: 700;
+}
+
+button[class^="button"] a {
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+}

@@ -2,7 +2,7 @@
     /* BOX-MODEL */
     width: 500px;
     margin: 0 20px 20px 0;
-    /* LAYOUT */
+    /* LAYOUT */    
     /* STYLES */
     border: 1px solid #ddd;
     border-radius: 15px;
@@ -14,7 +14,16 @@
     width: 100%;
     height: auto;
     /* LAYOUT */
-
     /* STYLES */
-    border-radius: inherit;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
 }
+
+.project__description {
+    padding: 20px;
+}
+
+.project__description button {
+    align-self: flex-end;  
+}
+

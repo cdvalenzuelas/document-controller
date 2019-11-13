@@ -5,6 +5,8 @@ import App from './Components/App';
 
 // Styles
 import './styles/index.css'
+import './styles/buttons.css'
+import './styles/inputs.css'
 
 const rootelement = document.getElementById('root');
 

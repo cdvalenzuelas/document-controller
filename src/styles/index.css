@@ -39,3 +39,7 @@ body::before {
     display: block;
     height: 80px;     
 }
+
+p {
+    margin-bottom: 20px;
+}

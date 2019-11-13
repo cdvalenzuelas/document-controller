@@ -1,11 +1,40 @@
+.projects,
+.projects__header,
+.projects__navbar,
+.projects__navbar ul,
+.project__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;    
+}
+
 .projects {
     /* BOX MODEL */
     width: 75%;
     max-width: 1200px; 
     margin: 0 auto;
-    /* LAYOUT */
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
+    /* LAYOUT */    
+    flex-flow: column wrap;        
+    /* STYLES */    
 }
+
+.projects__header {
+    /* BOX MODEL */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* LAYOUT */        
+    justify-content: space-between;    
+    /* STYLE */
+    background-image: var(--gradient1);    
+}
+
+.projects__navbar ul {    
+    list-style: none;
+}
+
+.project__container {
+    align-items: stretch;
+}
+
